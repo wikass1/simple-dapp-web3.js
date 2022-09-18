@@ -1,0 +1,499 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Grotesk", serif;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background: #5a00b0;
+}
+
+body {
+  color: white;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal-backdrop.show {
+  display: block;
+}
+
+.modal .title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.modal-content {
+  border-radius: 32px;
+  display: flex;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+  background: white;
+  align-self: baseline;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0 35px 25px,
+    rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  border: 0px;
+  cursor: pointer;
+  height: auto;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1;
+  background: transparent;
+}
+
+.modal-content button.btn-connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 50px !important;
+  border: 0px;
+  cursor: pointer;
+  height: auto;
+  padding: 10px 24px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1;
+}
+
+.modal-content button.btn-connect p {
+  margin: 10px 0;
+}
+
+.modal-content button.btn-connect img {
+  width: 40px;
+}
+
+.modal-dialog {
+  max-width: 400px;
+  margin: 8.75rem auto;
+}
+
+.modal-content button.btn-connect:hover {
+  opacity: 0.65;
+}
+
+.buy-section {
+  padding: 2rem 0 4rem 0;
+  min-height: 120vh;
+  background-image: url(img/background.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  color: black;
+}
+
+.forms-container {
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.13);
+}
+
+.swal-modal {
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 25px;
+}
+
+.swal-text {
+  color: #444444;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+
+.swal-button {
+  background-color: #dee2e6;
+  padding: 1rem 2rem;
+  font-size: 17px;
+  color: black;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #d2d4d6;
+}
+
+.swal-button:focus {
+  box-shadow: none;
+}
+
+#buyTokens {
+  background: linear-gradient(162.76deg, #ffe643 11.94%, #ff8d7c 88.26%);
+  padding: 16px 52px;
+  border-radius: 50px;
+  color: #8b0059;
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Space Grotesk";
+  margin-left: 40px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  align-items: flex-start;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  transition: 0.3s all ease;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#buyTokens:hover {
+  opacity: 0.8;
+}
+
+#buyTokens:focus-visible {
+  outline: none;
+}
+
+input[type="text"] {
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 25px;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: white;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+}
+input[type="text"]:focus-visible,
+input[type="text"]:focus-visible:focus,
+input[type="text"]:target {
+  border: 2px solid rgba(255, 255, 255, 0.45) !important;
+  box-shadow: none;
+  outline: none;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-absolute-element {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  display: FLEX;
+  gap: 0.5rem;
+}
+
+.input-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.input-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.swal-modal {
+  font-family: "Space Grotesk", serif;
+}
+
+.swal-title {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.walletconnect-modal__mobile__toggle a {
+  color: black !important;
+}
+
+.planet {
+  position: absolute;
+  z-index: 1;
+}
+
+.planet-1 {
+  top: 12%;
+  left: 9%;
+}
+
+.planet-2 {
+  right: 15%;
+  top: 12%;
+}
+
+.planet-3 {
+  right: 17%;
+  bottom: 22%;
+}
+
+.satelite {
+  left: 22%;
+  top: 65%;
+}
+
+.z-99 {
+  z-index: 99;
+}
+
+.diamond {
+  position: absolute;
+}
+
+.diamond-right {
+  right: -8px;
+}
+
+.diamond-left {
+  left: -15px;
+  bottom: 10%;
+}
+
+@keyframes glowAnimation {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.glowdiamond3 {
+  animation: glowAnimation 6s ease 0s infinite normal none;
+  -webkit-animation: glowAnimation 6s ease 0s infinite normal none;
+  filter: blur(8px) brightness(2);
+}
+
+.logo {
+  width: 40%;
+}
+
+.nth-2 {
+  margin-top: 1.6rem;
+}
+
+.info {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info span {
+  color: #ffe644;
+}
+
+.footer {
+  padding: 2rem 0;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.token-details-header {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.token-detail-label {
+  font-size: 12px;
+}
+
+.token-detail-content {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#copy {
+  cursor: pointer;
+  position: relative;
+}
+
+#copy img {
+  transition: 0.3s all ease;
+}
+
+#copy-text {
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  content: "Copy";
+  opacity: 0;
+  font-size: 13px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 0 2rem;
+  height: 30px;
+  background-color: white;
+  color: #5a00b0;
+  visibility: hidden;
+  top: -40px;
+  left: -50%;
+  transition: 0.3s all ease;
+}
+
+#copy:hover #copy-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+#copy-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.token-progress-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 28px auto auto;
+  max-width: 540px;
+  min-width: 330px;
+  width: calc(100% - 30px);
+  position: relative;
+}
+
+.bar-outer {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.45);
+  display: flex;
+  height: 8px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.bar-inner {
+  background-color: rgba(164, 24, 165, 0.85);
+  height: 100%;
+  border-radius: 25px;
+  padding: 0;
+  margin: 0;
+  width: 36%;
+  position: relative;
+}
+
+.bottom-info {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.token-progress-bar .percentage {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  left: calc(36% - 15px);
+  transform: translateX(0);
+}
+
+.token-progress-bar .arrow {
+  background-color: #ffe644;
+  clip-path: polygon(100% 50%, 0 50%, 50% 100%);
+  content: "";
+  margin-left: 0.5rem;
+  height: 13px;
+  width: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .buy-section {
+    min-height: 80vh;
+  }
+
+  .logo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .planet {
+    display: none;
+  }
+}
+
+.token-detail-top-row {
+  column-gap: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#bsc-address {
+  word-wrap: break-word;
+}
+
+.faq-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s all ease;
+}
+.faq-link:hover {
+  color: white;
+  opacity: 0.65;
+}
+
+.infoBlock {
+  margin-right: 2rem;
+}
